@@ -34,7 +34,7 @@
              LostFocus="txtEmail_LostFocus"/>
         </Border>
 
-        <Grid Margin="38,274,79,221">
+        <Grid Margin="43,257,74,238">
             <!-- Border redondeado -->
             <Border CornerRadius="30"
             BorderBrush="#50FFFFFF"
@@ -62,7 +62,7 @@
                FontFamily="Poppins"
                Foreground="#767171"
                VerticalAlignment="Center"
-               Margin="27,17,-4,23"
+               Margin="22,15,1,25"
                IsHitTestVisible="False"
                Visibility="Visible"/>
         </Grid>

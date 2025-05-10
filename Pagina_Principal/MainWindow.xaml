@@ -30,7 +30,7 @@
                 Background="White"
                 Foreground="Black"
                 FontSize="18"
-                BorderBrush="White">
+                BorderBrush="White" Click="BtnCrearCuenta">
             <Button.Content>
                 <TextBlock Text="Crear Cuenta">
                     <TextBlock.Effect>
@@ -41,7 +41,8 @@
                 </TextBlock>
             </Button.Content>
         </Button>
-
+        
+        <Button x:Name="DatosR" Content="REGISTOS DATOS" Click="BtnRegistros" Margin="170,494,151,10"/>
 
     </Grid>
 </Window>

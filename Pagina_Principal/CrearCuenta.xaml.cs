@@ -15,13 +15,43 @@ using System.Windows.Shapes;
 namespace Pagina_Principal
 {
     /// <summary>
-    /// Lógica de interacción para IniciarSesion.xaml
+    /// Lógica de interacción para CrearCuenta.xaml
     /// </summary>
-    public partial class IniciarSesion : Window
+    public partial class CrearCuenta : Window
     {
-        public IniciarSesion()
+        public CrearCuenta()
         {
             InitializeComponent();
+        }
+
+
+
+        //PARA REGRESAR A LA PANTALLA PRINCIAPL
+        private void Btn_Iniciar(object sender, MouseButtonEventArgs e)
+        {
+            IniciarSesion ventanaIniciar = new IniciarSesion();
+            ventanaIniciar.Show();
+
+            this.Close();
+        }
+
+
+        private void txtUsuario_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (txtUsuario.Text == "usuario")
+            {
+                txtUsuario.Text = "";
+                txtUsuario.Foreground = Brushes.Black;
+            }
+        }
+
+        private void txtUsuario_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtUsuario.Text))
+            {
+                txtUsuario.Text = "usuario";
+                txtUsuario.Foreground = new SolidColorBrush(Color.FromRgb(118, 113, 113));
+            }
         }
 
 
@@ -67,15 +97,21 @@ namespace Pagina_Principal
                 passwordPlaceholder.Visibility = Visibility.Visible;
         }
 
-        //PARA REGRESAR A LA PANTALLA PRINCIAPL
-        private void btn_Login(object sender, MouseButtonEventArgs e)
+        //SECCION DONDE HACE FUNCIONAR LA IMAGEN
+        private void btnImagen_Click(object sender, RoutedEventArgs e)
         {
-            CrearCuenta ventanaCrear = new CrearCuenta();
-            ventanaCrear.Show();
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            openFileDialog.Filter = "Imágenes (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
 
-            this.Close();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                ImgEmpleado.Source = new BitmapImage(new Uri(openFileDialog.FileName));
+
+                // Oculta el Border al mostrar la imagen
+                borderImagen.Background = Brushes.Transparent;
+                borderImagen.BorderBrush = Brushes.Transparent;
+            }
         }
-
 
 
     }
