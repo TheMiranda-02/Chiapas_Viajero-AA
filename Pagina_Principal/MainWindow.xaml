@@ -22,12 +22,11 @@
         <Label Content="¡Bienvenido!" Margin="119,334,118,171" FontFamily="Poppins" FontSize="32" FontWeight="Bold" Foreground="White"/>
         
         <!--Iniciar Sesión-->
-        <Button Content="Iniciar sesión" FontFamily="Poppins"  Margin="59,416,222,87" FontWeight="Bold" Background="#FF505D89" Foreground="White" FontSize="18" BorderBrush="#FF505D89" Click="BtnIniciarSesion"/>
+        <Button Content="Iniciar sesión" FontFamily="Poppins"  Margin="76,416,206,87" Background="#FF505D89" Foreground="White" FontSize="18" BorderBrush="#FF505D89" Click="BtnIniciarSesion"/>
         
         <!--Crear Cuenta-->
         <Button FontFamily="Poppins"
                 Margin="222,416,59,87"
-                FontWeight="Bold"
                 Background="White"
                 Foreground="Black"
                 FontSize="18"

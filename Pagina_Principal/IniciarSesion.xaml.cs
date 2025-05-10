@@ -67,6 +67,17 @@ namespace Pagina_Principal
                 passwordPlaceholder.Visibility = Visibility.Visible;
         }
 
+        //PARA REGRESAR A LA PANTALLA PRINCIAPL
+        //btn_Login
+        private void btn_Login(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+
+            this.Close();
+        }
+
+
 
     }
 }
