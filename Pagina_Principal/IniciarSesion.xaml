@@ -19,7 +19,7 @@
         <!--INPUT (php)-->
         
         <!--LABEL DE EMAIL-->
-        <Border CornerRadius="30" BorderBrush="#50FFFFFF" BorderThickness="0" Background="#50FFFFFF" Margin="38,172,46,327">
+        <Border CornerRadius="30" BorderBrush="#50FFFFFF" BorderThickness="0" Background="#99FFFFFF" Margin="38,172,46,327">
             <TextBox Name="txtEmail"
              Text="email"
              FontSize="18"
@@ -28,7 +28,7 @@
              BorderThickness="0"
              VerticalContentAlignment="Center"
              Padding="23,2"
-             Foreground="#FF767171"
+             Foreground="#767171"
              Margin="2,0,-2,0"
              GotFocus="txtEmail_GotFocus"
              LostFocus="txtEmail_LostFocus"/>
@@ -39,7 +39,7 @@
             <Border CornerRadius="30"
             BorderBrush="#50FFFFFF"
             BorderThickness="0"
-            Background="#50FFFFFF" Margin="0,-2,-31,7">
+            Background="#99FFFFFF" Margin="0,-2,-31,7">
 
                 <!-- PasswordBox para escribir contraseña oculta -->
                 <PasswordBox Name="txtPassword"
@@ -60,7 +60,7 @@
                Text="contraseña"
                FontSize="18"
                FontFamily="Poppins"
-               Foreground="#FF767171"
+               Foreground="#767171"
                VerticalAlignment="Center"
                Margin="27,17,-4,23"
                IsHitTestVisible="False"
@@ -70,8 +70,7 @@
         <!--BOPON PARA HACER EL SUBMIT-->
         <Button Content="Iniciar sesión" 
                 FontFamily="Poppins"  
-                Margin="38,371,46,132" 
-                FontWeight="Bold" 
+                Margin="38,371,46,132"  
                 Background="#FF505D89" 
                 Foreground="White" 
                 FontSize="18" 
@@ -82,7 +81,7 @@
                     <Border Background="{TemplateBinding Background}" 
                     BorderBrush="{TemplateBinding BorderBrush}" 
                     BorderThickness="1" 
-                    CornerRadius="30">
+                    CornerRadius="16">
                         <ContentPresenter HorizontalAlignment="Center" 
                                   VerticalAlignment="Center" />
                     </Border>
@@ -91,7 +90,9 @@
         </Button>
         
         <!--AQUI VA EL REGRESO A LA PRINCIPAL-->
+        <Label Content="¿Aún no tienes cuenta?" Margin="87,449,184,76" FontFamily="Poppins" FontSize="14" Foreground="White"/>
 
+        <Label Content="Regístrate" Margin="238,449,34,76" FontFamily="Poppins" FontWeight="Bold" FontSize="14" Foreground="#455177" MouseLeftButtonDown="btn_Login"/>
 
 
     </Grid>
