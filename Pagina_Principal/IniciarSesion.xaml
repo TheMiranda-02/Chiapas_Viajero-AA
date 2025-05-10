@@ -9,7 +9,7 @@
     <Grid>
         <!-- FONDO DE LA HOJA -->
         <Grid.Background>
-            <ImageBrush ImageSource="fondo.png" Stretch="Fill" RenderOptions.BitmapScalingMode="HighQuality"/>
+            <ImageBrush ImageSource="img/fondo.png" Stretch="Fill" RenderOptions.BitmapScalingMode="HighQuality"/>
         </Grid.Background>
         
         <!--Contenido de Iniciar Sesión-->

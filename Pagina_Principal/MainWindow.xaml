@@ -10,12 +10,12 @@
         
         <!-- FONDO DE LA HOJA -->
         <Grid.Background>
-            <ImageBrush ImageSource="fondo.png" Stretch="Fill" RenderOptions.BitmapScalingMode="HighQuality"/>
+            <ImageBrush ImageSource="img/fondo.png" Stretch="Fill" RenderOptions.BitmapScalingMode="HighQuality"/>
         </Grid.Background>
          
         
         <!--LOGO DEL PROYECTO CHIAPAS VIAJERO AA-->
-        <Image Source="Logo.png" Margin="62,54,82,256" SnapsToDevicePixels="True"  RenderOptions.BitmapScalingMode="HighQuality" UseLayoutRounding="True"/>
+        <Image Source="img/Logo.png" Margin="62,54,82,256" SnapsToDevicePixels="True"  RenderOptions.BitmapScalingMode="HighQuality" UseLayoutRounding="True"/>
         
         <!--CONTENIDO DEL LOGIN-->
 
